@@ -1,0 +1,11 @@
+class Solution {
+    public int[] runningSum(int[] nums) {
+        int count=0;
+        int n=nums.length;
+        int[] modified_arr=new int[n];
+        for(int i=0;i<n;i++){
+            modified_arr[i]=count+nums[i];
+            count=modified_arr[i];
+        }return modified_arr;
+    }
+}
